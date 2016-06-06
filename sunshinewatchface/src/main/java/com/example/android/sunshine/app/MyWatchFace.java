@@ -423,7 +423,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
 
             canvas.drawText(
                     mDateFormat.format(mDate),
-                    mXOffset + mLineWidth , mYOffset + mLineHeight, mDatePaint);
+                    (float) (mXOffset + mLineWidth*0.6), mYOffset + mLineHeight, mDatePaint);
 
 
             Bitmap bitmap = getIconResourceForWeatherCondition(weatherId);
